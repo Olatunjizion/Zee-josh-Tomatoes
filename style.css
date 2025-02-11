@@ -1069,5 +1069,61 @@ a:focus {
 .product:hover {
     transform: scale(1.05);
 }
+.testimonials {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: tomato;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.role {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.quote {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.highlight {
+    border: 2px solid gold;
+    padding: 25px;
+}
 N
 /*# sourceMappingURL=style.css.map */
