@@ -1221,48 +1221,30 @@ Start Shopping Now!
     </section>
     end book section  -->
 
-
-
-    <section class="client_section layout_padding-bottom">
-      <div class="testimonial-container" id="testimonial">
-        <img src="flyer" alt="Profile">
-        <h3 id="name">Someone Famous</h3>
-        <p id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit suscipit et quas aperiam ut veritatis?</p>
-    </div>
-
+ <section class="testimonial-section">
+        <div class="testimonial-card">
+            <div class="profile-pic" id="profile-pic"></div>
+            <h2 id="testimonial-name">Jane Smith</h2>
+            <p id="testimonial-text">Absolutely fantastic! The design and usability are top-notch.</p>
+        </div>
+    </section>
     <script>
         const testimonials = [
-            {
-                name: "John Doe",
-                quote: "This service changed my life! Highly recommend it to everyone.",
-                image: "https://via.placeholder.com/80/FF0000/FFFFFF?text=JD"
-            },
-            {
-                name: "Jane Smith",
-                quote: "Absolutely fantastic! The design and usability are top-notch.",
-                image: "https://via.placeholder.com/80/00FF00/FFFFFF?text=JS"
-            },
-            {
-                name: "Michael Brown",
-                quote: "I've never seen anything quite like this. Stunning and effective!",
-                image: "https://via.placeholder.com/80/0000FF/FFFFFF?text=MB"
-            }
+            { name: "Jane Smith", text: "Absolutely fantastic! The design and usability are top-notch.", pic: "" },
+            { name: "John Doe", text: "A wonderful experience! Would highly recommend.", pic: "" },
+            { name: "Emily Davis", text: "A sleek and modern touch to the site. Love it!", pic: "" }
         ];
 
         let index = 0;
         function updateTestimonial() {
-            const testimonial = testimonials[index];
-            document.getElementById("name").textContent = testimonial.name;
-            document.getElementById("quote").textContent = testimonial.quote;
-            document.querySelector(".testimonial-container img").src = testimonial.image;
-            
             index = (index + 1) % testimonials.length;
+            document.getElementById("testimonial-name").innerText = testimonials[index].name;
+            document.getElementById("testimonial-text").innerText = testimonials[index].text;
         }
-
         setInterval(updateTestimonial, 3000);
     </script>
-    </section>
- -->
+
+   
     <!-- footer section -->
     <footer class="footer_section">
       <div class="container">
