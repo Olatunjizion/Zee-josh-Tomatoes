@@ -1221,124 +1221,47 @@ Start Shopping Now!
     </section>
     end book section  -->
 
-    <!-- client section -->
-<!--     <section class="testimonials">
-        <h2>Client Opinions & Reviews</h2>
-        <div class="testimonial-container">
-            
-            <div class="testimonial">
-                <img src="person1.jpg" alt="Varaha Roopam">
-                <h3>Varaha Roopam</h3>
-                <p class="role">Junior Lawyer</p>
-                <p class="quote">❝ There are many variations of Lorem Ipsum available, but the majority have some alteration in form. ❞</p>
-            </div>
-
-            <div class="testimonial highlight">
-                <img src="person2.jpg" alt="Varaha Roopam">
-                <h3>Varaha Roopam</h3>
-                <p class="role">Junior Lawyer</p>
-                <p class="quote">❝ There are many variations of Lorem Ipsum available, but the majority have some alteration in form. ❞</p>
-            </div>
-
-            <div class="testimonial">
-                <img src="person3.jpg" alt="Varaha Roopam">
-                <h3>Varaha Roopam</h3>
-                <p class="role">Junior Lawyer</p>
-                <p class="quote">❝ There are many variations of Lorem Ipsum available, but the majority have some alteration in form. ❞</p>
-            </div>
-
-        </div>
-    </section>
 
 
     <section class="client_section layout_padding-bottom">
-      <div class="container">
-        <div class="heading_container heading_center psudo_white_primary mb_45">
-          <h2>What Says Our Customers</h2>
-        </div>
-        <div class="carousel-wrap row">
-          <div class="owl-carousel client_owl-carousel">
-            <div class="item">
-              <div class="box">
-                <div class="detail-box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                  <h6>Moana Michell</h6>
-                  <p>magna aliqua</p>
-                </div>
-                <div class="img-box">
-                  <img src="images/client1.jpg" alt="" class="box-img" />
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="detail-box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                  <h6>Mike Hamell</h6>
-                  <p>magna aliqua</p>
-                </div>
-                <div class="img-box">
-                  <img src="images/client2.jpg" alt="" class="box-img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="testimonial-container" id="testimonial">
+        <img src="flyer" alt="Profile">
+        <h3 id="name">Someone Famous</h3>
+        <p id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reprehenderit suscipit et quas aperiam ut veritatis?</p>
+    </div>
+
+    <script>
+        const testimonials = [
+            {
+                name: "John Doe",
+                quote: "This service changed my life! Highly recommend it to everyone.",
+                image: "https://via.placeholder.com/80/FF0000/FFFFFF?text=JD"
+            },
+            {
+                name: "Jane Smith",
+                quote: "Absolutely fantastic! The design and usability are top-notch.",
+                image: "https://via.placeholder.com/80/00FF00/FFFFFF?text=JS"
+            },
+            {
+                name: "Michael Brown",
+                quote: "I've never seen anything quite like this. Stunning and effective!",
+                image: "https://via.placeholder.com/80/0000FF/FFFFFF?text=MB"
+            }
+        ];
+
+        let index = 0;
+        function updateTestimonial() {
+            const testimonial = testimonials[index];
+            document.getElementById("name").textContent = testimonial.name;
+            document.getElementById("quote").textContent = testimonial.quote;
+            document.querySelector(".testimonial-container img").src = testimonial.image;
+            
+            index = (index + 1) % testimonials.length;
+        }
+
+        setInterval(updateTestimonial, 3000);
+    </script>
     </section>
-  -->
-<!--     <section class="client_section layout_padding-bottom">
-      <div class="container">
-        <div class="heading_container heading_center psudo_white_primary mb_45">
-          <h2>What Says Our Customers</h2>
-        </div>
-        <div class="carousel-wrap row">
-          <div class="owl-carousel client_owl-carousel">
-            <div class="item">
-              <div class="box">
-                <div class="detail-box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                  <h6>Moana Michell</h6>
-                  <p>magna aliqua</p>
-                </div>
-                <div class="img-box">
-                  <img src="images/client1.jpg" alt="" class="box-img" />
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="detail-box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam
-                  </p>
-                  <h6>Mike Hamell</h6>
-                  <p>magna aliqua</p>
-                </div>
-                <div class="img-box">
-                  <img src="images/client2.jpg" alt="" class="box-img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end client section
  -->
     <!-- footer section -->
     <footer class="footer_section">
